@@ -159,7 +159,7 @@ function mapGK() {
   var latBR=latlonBR.latConv();
   var lonBR=latlonBR.lonConv();
   var zoom = event_source.getZoom();
-  url="//api.geokretymap.org/getPoints.php?latTL="+latlonTL.lat+"&lonTL="+latlonTL.lon+"&latBR="+latlonBR.lat+"&lonBR="+latlonBR.lon+"&zoom="+zoom;
+  url="//api.geokretymap.org/export2.php?latTL="+latlonTL.lat+"&lonTL="+latlonTL.lon+"&latBR="+latlonBR.lat+"&lonBR="+latlonBR.lon+"&zoom="+zoom;
 
   if (zoom > 8 && !jQuery('#ghosts').is(":checked")) {
     jQuery('#older').prop('checked', true);
