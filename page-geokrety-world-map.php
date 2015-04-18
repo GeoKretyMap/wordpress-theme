@@ -11,10 +11,10 @@ function my_scripts_method() {
   wp_register_script(   'spinjquery',    get_stylesheet_directory_uri() . '/javascript/jquery.spin.js', array(), NULL, true);
   wp_enqueue_script(    'spinjquery' );
   wp_deregister_script( 'openlayers' );
-  wp_register_script(   'openlayers',    '/openlayers/OpenLayers.js', array(), NULL, true);
+  wp_register_script(   'openlayers',    '//openlayers.geokretymap.org/openlayers/OpenLayers.js', array(), NULL, true);
   wp_enqueue_script(    'openlayers' );
   wp_deregister_script( 'mapstraction' );
-  wp_register_script(   'mapstraction',    '/mxn/mxn.js?(openlayers)', array(), NULL, true);
+  wp_register_script(   'mapstraction',    '//mxn.geokretymap.org/mxn.js?(openlayers)', array(), NULL, true);
   wp_enqueue_script(    'mapstraction' );
   
   wp_deregister_script( 'map' );
