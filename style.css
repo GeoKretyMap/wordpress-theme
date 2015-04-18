@@ -1,0 +1,42 @@
+/*
+ Theme Name:   Twenty Fourteen Child - For Geokrety
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Geokrety
+ Author:       Mathieu Alorent
+ Author URI:   http://geokretymap.org
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+
+@import url("../twentyfourteen/style.css");
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+#map-loading {
+	position: relative;
+}
+
+#map {
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+#map img {
+	max-width: none;
+}
