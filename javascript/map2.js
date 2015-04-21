@@ -215,14 +215,14 @@ function mapGK() {
   }
 
   function getInfos(gk) {
-   var text = '<a href="http://geokretymap.org/'+jQuery(gk).attr('id')+'" target="_blank">'+jQuery(gk).text()+'</a>';
+   var text = '<a href="//geokretymap.org/'+jQuery(gk).attr('id')+'" target="_blank">'+jQuery(gk).text()+'</a>';
    var dist = jQuery(gk).attr('dist');
    if (typeof dist !== typeof undefined && dist !== false) {
     text += ' ('+jQuery(gk).attr('dist')+'&nbsp;km)';
    }
    var waypoint = jQuery(gk).attr('waypoint');
    if (typeof waypoint !== typeof undefined && waypoint !== false) {
-    text += '<br/>In: <a href="http://geokrety.org/go2geo/index.php?wpt='+jQuery(gk).attr('waypoint')+'" target="_blank">'+jQuery(gk).attr('waypoint')+'</a>';
+    text += '<br/>In: <a href="//geokrety.org/go2geo/index.php?wpt='+jQuery(gk).attr('waypoint')+'" target="_blank">'+jQuery(gk).attr('waypoint')+'</a>';
    }
    var date = jQuery(gk).attr('date');
    if (typeof date !== typeof undefined && date !== false) {
